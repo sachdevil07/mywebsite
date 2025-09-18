@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>My Business - Advertise Smarter</title>
   <style>
     body {
@@ -28,15 +29,51 @@
       font-weight: bold;
     }
     .hero {
-      background: url('https://source.unsplash.com/1600x500/?business,marketing') no-repeat center;
-      background-size: cover;
-      height: 400px;
+      
+      background: url("laptop.jpeg") ;
+      
+      height: 900px;
       display: flex;
       align-items: center;
       justify-content: center;
       color: white;
       font-size: 2rem;
       font-weight: bold;
+      font-style: cursive;
+      
+    }
+    
+
+    .slider {
+      width: 100%;
+      margin: auto;
+      padding: 20px 10;
+      top: -5%;
+      overflow: hidden;
+      
+    }
+
+    .slide-track {
+      display: flex;
+      width: calc(250px * 10); 
+      animation: scroll 20s linear infinite;
+    }
+
+    .slide {
+      width: 500px;
+      flex-shrink: 0;
+      margin: 0 10px;
+    }
+
+    .slide img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(50); }
+      100% { transform: translateX(-50%); }
     }
     .section {
       padding: 40px;
@@ -59,11 +96,29 @@
       border-radius: 5px;
     }
     footer {
-      background: #222;
+      background: hsl(0, 10%, 8%);
       color: white;
       text-align: center;
       padding: 15px;
     }
+
+    .imgg img{
+      width: 40px;
+      height: auto;
+      
+    }
+    .imgg img:hover{
+      transform: scale(1.1);
+    }
+    .imgg a{
+      font-size: large;
+      color: antiquewhite;
+ 
+      
+      
+    }
+   
+    
   </style>
 </head>
 <body>
@@ -81,7 +136,28 @@
 
 <div class="hero">
   <p>Boost Your Brand with Us!</p>
+  <div class="slider">
+    <div class="slide-track">
+      <div class="slide"><img src="code3.jpg" alt=""></div>
+      <div class="slide"><img src="code1.jpeg" alt=""></div>
+      <div class="slide"><img src="code2.jpeg" alt=""></div>
+      <div class="slide"><img src="code4.jpeg" alt=""></div>
+      <div class="slide"><img src="code5.png" alt=""></div>
+      
+      
+      <!-- repeat images to create smooth loop -->
+      <div class="slide"><img src="code3.jpg" alt=""></div>
+      <div class="slide"><img src="code1.jpg" alt=""></div>
+      <div class="slide"><img src="code2.jpeg" alt=""></div>
+      <div class="slide"><img src="code4.jpeg" alt=""></div>
+      <div class="slide"><img src="code5.png" alt=""></div>
+    </div>
+  </div>
 </div>
+
+ 
+
+
 
 <section id="services" class="section">
   <h2>Our Services</h2>
@@ -105,9 +181,14 @@
 </div>
 
 <footer>
-  <p>&copy; 2025 My Business. All rights reserved.</p>
+  <div class="imgg">
+    <img src="instagram.jpeg" alt="">
+    <a href="https://www.instagram.com/_0100null001c_i_21010?igsh=M3F3NHFiM2FpOTVm" >
+         visit our profile
+    </a>
+  </div>
+  
 </footer>
 <p>Hunter</p>
-
 </body>
 </html>
